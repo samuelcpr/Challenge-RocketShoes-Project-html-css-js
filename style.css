@@ -9,7 +9,8 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
+    width: auto;
+    height: auto;
     flex-direction: column;
 }
 
@@ -39,6 +40,10 @@ ul li {
     font-size: 30px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#space {
+    padding-right: 10px;
 }
 
 #navBar,
@@ -82,6 +87,7 @@ ul li a:hover {
 
 .main {
     display: flex;
+    height: auto;
 }
 
 .boxTitle {
@@ -89,8 +95,8 @@ ul li a:hover {
     width: 30%;
     background-color: transparent;
     flex-direction: column;
-    padding: 0;
     margin: 75px 150px;
+    margin-bottom: 15%;
 }
 
 .boxTitle h1 {
@@ -138,14 +144,12 @@ ul li a:hover {
 }
 
 .boxTitle a:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.1);
     background-color: #ff0000ba;
 }
 
 .boxImage {
     display: flex;
-    width: 70%;
+    width: 90%;
     background-color: #C4C4C4;
     position: relative;
     margin-top: -220px;
@@ -173,17 +177,18 @@ ul li a:hover {
 .imageMiniature img {
     border-radius: 5px;
     width: 320px;
-    transition: all 0.5s;
+    transition: all 0.4s;
     cursor: pointer;
 }
 
 .imageMiniature img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.1);
-    border-bottom: 4px solid red;
+    border-bottom: 3px solid red;
+    /* margin-bottom: 5%; */
 }
 
 .footer {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -218,8 +223,8 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    padding: 79px 30px;
+    width: auto;
+    padding: 4% 8% 4% 8%;
 }
 
 .footerExplorer a {
@@ -232,6 +237,14 @@ ul li {
     text-decoration: none;
 }
 
-.footerExplorer img {
-    margin-left: 15px;
+.footerExplorer img {}
+
+.footerVideo {
+    width: auto;
+    height: 20%;
+}
+
+.footerVideo video {
+    height: 50%;
+    padding: 0
 }
